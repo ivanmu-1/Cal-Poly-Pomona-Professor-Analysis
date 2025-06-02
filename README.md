@@ -51,7 +51,7 @@ This table stores individual reviews, linked to each professor by the foreign ke
 
 ### Data Collection
 
-Data collection was done using two softwares. the first was Instant Data Scrapper for the professors table and RStudio for the reviews table. I used RSelenium and Tidyverse to gather and manipulate the data. Microsoft SQL will then be used for further analysis. R code used was originally written by Samer Hijjazi with minor modifications done by me. Original code is avaliable here. His Youtube video on how to setup RSelenium and video on his Ratemyprofessor project were a big help, along with his entire Youtube channel. For chromedriver troubles, ZeeCoding video was a huge help
+Data collection was done using two softwares. The first was Instant Data Scrapper for the professors table and RStudio for the reviews table. We used RSelenium and Tidyverse to gather and manipulate the data. Microsoft SQL will then be used for further analysis. R code used was originally written by Samer Hijjazi with minor modifications done by us. Original code is avaliable here. His Youtube video on how to setup RSelenium and video on his Ratemyprofessor project were a big help, along with his entire Youtube channel. For chromedriver troubles, ZeeCoding video was a huge help
 
 ### Data Cleaning
 
