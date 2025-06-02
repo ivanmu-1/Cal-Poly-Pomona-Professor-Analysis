@@ -22,7 +22,7 @@ This table will store the following data for each professor:
 
 ### Reviews Table
 
-This table stores individual reviews, linked to each professor by the foreign key, Professor_ID :
+This table stores individual reviews, linked to each professor by the foreign key, ```Professor_ID```:
 
 * ```Professor_ID```: Unique identifier for each professor.
 * ```Professor_Name```: Full name of the Professor.
