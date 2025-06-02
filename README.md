@@ -56,8 +56,8 @@ Data collection was done using two softwares. The first was Instant Data Scrappe
 ### Data Cleaning
 
 Data cleaning was primarily done using Pandas, with the goal of standardizing and cleaning the data extracted from the Instant Data Scraper. This involved two CSV files: the first containing general professor information from RateMyProfessor, and the second containing in-depth comments and the overall sentiment of each individual review. The cleaning process followed a basic data cleaning structure of loading the data, inspecting it, standardizing formats, handling missing values, removing duplicates, ensuring correct data types, and addressing outliers. After cleaning, the data was saved into new, cleaned CSV files. This step represents the 'Transform' stage of the ETL process. All cleaning procedures were applied to both datasets and are documented in the accompanying Jupyter notebook files. 
-- [General RatemyProfessor data-cleaning script](https://github.com/ivanmu-1/Python-Portfolio/blob/main/Cal%20Poly%20Pomona%20Professor%20Analysis/RatemyProfessor.ipynb)
-- [Reviews data-cleaning script](https://github.com/ivanmu-1/Python-Portfolio/blob/main/Cal%20Poly%20Pomona%20Professor%20Analysis/Reviews.ipynb)
+- [General RatemyProfessor data-cleaning script]()
+- [Reviews data-cleaning script]()
 
 ### Exploratory Data Analysis (EDA)
 
