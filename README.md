@@ -4,6 +4,7 @@ This project focuses on showcasing our skills in collecting, cleaning, and analy
 #### This Project was done as a joint collaboration between:  
 - [Rodrigo Isidro](https://github.com/Rodgeroger) 
 - [Ivan Mu](https://github.com/ivanmu-1)
+
 ## Project Structure
 
 The project is organized around two primary tables:
@@ -71,8 +72,8 @@ Observations:
 
   - Clear positive shew - Professors have an high amount of 5's.
   - Majority of Professors have rating between 3 and 5
-  - As Avg_Difficulty increase, Avg_rating begins to drop
-  - A lower Avg_Difficulty correlates to an higher Avg_rating score
+  - As Avg_Difficulty increase, Avg_Rating begins to drop
+  - A lower Avg_Difficulty correlates to an higher Avg_Rating score
   - "Excellent" Rating are most common among Professors, while "Hard" Difficulty has the fewest professors
   - "Moderate" and "Challenging" difficulty contains the widest spread across all rating categories
   - "Moderate" and "Excellent" contains the highest count
