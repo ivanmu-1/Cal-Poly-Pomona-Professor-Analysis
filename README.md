@@ -84,4 +84,4 @@ Takeaway:
   - Easier Professor tend to be rated more favorably, suggesting that student satisfaction is directly influenced by difficulty.
   - Moderate difficulty seems to be the sweet spot, balancing student satisfaction with academic rigor.
   - Professors who are perceived as very hard struggle to earn high ratings, possibly due to workload or grading policies.
-  - Easier classes often correlate with higher ratings, but not exclusively — students still value teaching quality, not just ease
+  - Easier classes often correlate with higher ratings, but not exclusively; students still value teaching quality, not just ease
