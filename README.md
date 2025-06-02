@@ -1,5 +1,5 @@
 # Cal Poly Pomona Professor Analysis
-This project is aimed at analyzing Cal Poly Pomona professor reviews from the website Rate My Professors. The project is currently in progress, and the data for reviews has been successfully collected and stored. We are now in the process of gathering individual professor data, which will be linked to the reviews table for further analysis.
+This project focuses on analyzing professor reviews for Cal Poly Pomona, sourced from [RateMyProfessors.com](https://www.ratemyprofessors.com/school/13914). The review and professor data have been successfully collected, cleaned, and analyzed. The project is currently in its final stages as we work on wrapping up the remaining tasks.
 
 #### This Project was done as a joint collaboration between:  
 - [Rodrigo Isidro](https://github.com/Rodgeroger) 
