@@ -1,5 +1,5 @@
 # Cal Poly Pomona Professor Analysis
-This project focuses on showcasing our skills in collecting, cleaning, and analyzing professor reviews for Cal Poly Pomona, sourced from [RateMyProfessors.com](https://www.ratemyprofessors.com/school/13914). The review and professor data have been successfully collected, cleaned, and analyzed. The project is currently in its final stages as we work on wrapping up the remaining tasks and conduct experiments with Supervised Topic Modeling.
+This project focuses on showcasing our skills in collecting, cleaning, and analyzing professor reviews for Cal Poly Pomona, sourced from [RateMyProfessors.com](https://www.ratemyprofessors.com/school/13914). The review and professor data have been successfully collected, cleaned, and analyzed. The project is currently in its final stages as we work on wrapping up the remaining tasks and conduct experiments with Supervised Topic Modeling in RStudio.
 
 #### This Project was done as a joint collaboration between:  
 - [Rodrigo Isidro](https://github.com/Rodgeroger) 
