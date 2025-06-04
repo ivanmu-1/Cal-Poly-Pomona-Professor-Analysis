@@ -53,13 +53,13 @@ sLDA_input <- lexicalize(profs$comment)
 
 # Create model
 slda_mod <- slda.em(documents = sLDA_input$documents,
-                    K = 15,
+                    K = 12,
                     vocab = sLDA_input$vocab,
                     num.e.iterations = 100,
                     num.m.iterations = 2,
                     alpha = 1, 
                     eta = 0.1,
-                    params = sample(c(-1, 1), 15, replace = TRUE),
+                    params = sample(c(-1, 1), 12, replace = TRUE),
                     variance = var(profs$rating),
                     annotations = profs$rating,
                     method = "sLDA")
@@ -89,7 +89,7 @@ coefs %>% ggplot(aes(topics, Estimate, colour = Estimate)) +
 df <- t(slda_mod$document_sums) / colSums(slda_mod$document_sums)
 df <- cbind(df, profs$rating)
 df <- data.frame(df)
-colnames(df) <- c(paste0("topic", 1:15), "rating")
+colnames(df) <- c(paste0("topic", 1:12), "rating")
 lmod <- lm(rating ~ . -1, data = df)
 coef(lmod)
 
@@ -97,7 +97,7 @@ coef(lmod)
 df <- t(slda_mod$document_sums) / colSums(slda_mod$document_sums)
 df <- cbind(df, profs$rating, profs$difficulty)
 df <- data.frame(df)
-colnames(df) <- c(paste0("topic", 1:15), "rating", "difficulty")
+colnames(df) <- c(paste0("topic", 1:12), "rating", "difficulty")
 lmod <- lm(rating ~ . -1, data = df)
 coef(lmod)
 
@@ -147,6 +147,6 @@ new_document_sums <- slda.predict.docsums(sLDA_input$documents, slda_mod$topics,
 df <- t(new_document_sums) / colSums(new_document_sums)
 df <- cbind(df, profs$rating, profs$difficulty)
 df <- data.frame(df)
-colnames(df) <- c(paste0("topic", 1:8), "rating", "difficulty")
+colnames(df) <- c(paste0("topic", 1:12), "rating", "difficulty")
 yhat <- predict(lmod, newdata = df)
 
