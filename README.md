@@ -42,14 +42,18 @@ This table stores individual reviews, linked to each professor by the foreign ke
   - RSelenium
   - Tidyverse
   - dplyr
+  - rsample
+  - cld2
+  - tidytext
+  - lda
 * Microsoft SQL Server
 * Excel
 * Instant Data Scrapper
 * Jupyter Notebook
-* Pandas
-* Mathplotlib
-* Seaborn
-
+  - Pandas
+  - Mathplotlib
+  - Seaborn
+  
 ### Data Collection
 
 Data collection was conducted using two primary tools. The [Instant Data Scrapper](https://chromewebstore.google.com/detail/instant-data-scraper/ofaokhiedipichpaobibbnahnkdoiiah?hl=en-US) Chrome extension was utilized to extract data for the professors table, while RStudio was used to collect and process the reviews table. Data gathering and manipulation were performed using the RSelenium and Tidyverse packages. R was used to scrape data from RateMyProfessors.com by automating a web browser with RSelenium. It started by launching a Selenium server to control a web browser from R. It then navigated to the site, interacted with the page to load all the content, and then collected the HTML source. Using R packages, It extracted key information about professors and organized it into a structured format. Finally, It saved the data in a CSV file for further analysis. The script automates the entire process, making it easy to collect large amounts of information from the site. The R code implemented in this project was originally developed by [Samer Hijjazi](https://github.com/ggSamoora) with minor modifications done by us to suit our needs. The original script can be accessed [here](https://github.com/ggSamoora/TutorialsBySamoora/blob/3cacfc7b902e8c81dd628789dc7a1100c6eb16c8/rate_my_professor_script.Rmd). His Youtube [video](https://youtu.be/GnpJujF9dBw?si=khNkvGcjxOh9AwGQ) on setting up RSelenium and his [video](https://youtu.be/mWUOdV2nMOk?si=KhwTLVmnJaj4qtVP) on his Ratemyprofessor project were especially valuable, as was his entire [Youtube channel](https://www.youtube.com/@SamerHijjazi/featured). ZeeCoding’s [tutorial](https://www.youtube.com/watch?v=Bpd04FH9ycs&ab_channel=ZeeCoding) also was instrumental in resolving Chromedriver-related issues
@@ -85,3 +89,7 @@ Takeaway:
   - Moderate difficulty seems to be the sweet spot, balancing student satisfaction with academic rigor.
   - Professors who are perceived as very hard struggle to earn high ratings, possibly due to workload or grading policies.
   - Easier classes often correlate with higher ratings, but not exclusively; students still value teaching quality, not just ease
+
+### Supervised Topic Modelling
+
+I used supervised Latent Dirichlet Allocation (sLDA) because I wanted to uncover topics from a collection of documents that not only describe the content but also help predict an associated outcome variable. For example, if each document had a review score, I wanted the model to identify topics that could explain and predict those scores based on the comments, overall rating, and difficulty level. To achieve this, I first cleaned and preprocessed the text data, removing stopwords, tokenizing the text, and creating a document-term matrix. Then, I aligned each document with its corresponding numeric response variable. Using the lda package in R, I structured the data into the format required for sLDA, specified the number of topics, and ran the model. After training, I reviewed the generated topics, analyzed the regression coefficients to see which topics had the most predictive power, and evaluated how well the model performed. The results were mixed—the model sometimes came close to accurate predictions but was completely off in others. It’s clear that additional testing and parameter tuning are needed to build a more accurate and reliable model. The R code implemented in this project was originally developed by [Melissa Van Bussel](https://github.com/ggSamoora) with minor modifications done by us to suit our needs. The original script can be accessed [here](supervised_topic_modelling/sLDA.R). Her YouTube video on performing sLDA can be accessed [here](https://youtu.be/WmLkYUEIU4U?si=aDDH5I3s4R8rNV03)
